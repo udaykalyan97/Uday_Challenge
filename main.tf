@@ -6,8 +6,8 @@ resource "aws_s3_bucket" "static_website_bucket" {
   bucket = "your-unique-bucket-name"  # Replace with your preferred bucket name
   acl    = "public-read"
   website {
-    index_document = "index.html"
-    error_document = "error.html"
+    index_document = "static/index.html"
+    error_document = "static/error.html"
   }
 }
 
